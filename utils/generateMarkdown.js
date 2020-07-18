@@ -18,13 +18,13 @@ function generateMarkdown(data) {
   entitled Questions, with a link to my GitHub profile */
 
   return `# ${data.title}
-  # $(title)
+  # ${title}
 
-  $(license)
+  ${license}
 
   ## Description
 
-  $(description)
+  ${description}
 
   ## Table of Contents
 
@@ -36,19 +36,19 @@ function generateMarkdown(data) {
   * [Questions](#questions) 
   
   ## Installation
-  $(installation)
+  ${installation}
 
   ##Usage
-  $(usage)
+  ${usage}
 
   ## License
   This project is covered by the $(license) license.
 
   ## Contribution
-  $(contribution)
+  ${contribution}
 
   ## Test
-  $(test)
+  ${test}
 
   ## Questions
   Visit my GitHub 
