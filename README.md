@@ -14,7 +14,7 @@
   * [Test](#test)
   * [Questions](#questions) 
 
-  ![README Generator Demo](https://devmadia.github.io/README-Generator/README-Generator.gif)
+  ![README Generator Demo](/README-Generator.gif)
   
   ## Installation
   Initiate a clone or pull of a project's repo onto your local machine, then change directory into the README Generator. You will need to run [npm i] to install Inquirer.
