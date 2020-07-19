@@ -2,7 +2,6 @@ const fs = require('fs'); // in order to use File System, the aside constant is 
 const inquirer = require('inquirer');
 
 // receiving module.exports from generateMarkdown.js
-const generatePage = require('./src/generateMarkdown.js');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 /* Questions: the title of project and sections entitled "Description", "Table of Contents", 
