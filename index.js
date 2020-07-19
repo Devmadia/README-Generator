@@ -1,3 +1,4 @@
+const fs = require('fs'); // in order to use File System, the below constant is necessary
 const inquirer = require('inquirer');
 // // receiving module.exports from generateMarkdown.js
 // const generatePage = require('./src/generateMarkdown.js');
@@ -5,8 +6,7 @@ const inquirer = require('inquirer');
 /* Questions: the title of project and sections entitled "Description", "Table of Contents", 
 "Installation", "Usage", "License", "Contributing", "Tests", and "Questions" */
 
-// in order to use File System, the below constant is necessary
-const fs = require('fs');
+
 
 // array of questions for user
 const questions = [
