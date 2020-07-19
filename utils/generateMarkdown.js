@@ -17,10 +17,8 @@ function generateMarkdown(data) {
   THEN this is added to the section of the README 
   entitled Questions, with a link to my GitHub profile */
 
-  return `# ${data.title}
+  return `
   # ${title}
-
-  ${license}
 
   ## Description
 
@@ -38,12 +36,13 @@ function generateMarkdown(data) {
   ## Installation
   ${installation}
 
-  ##Usage
+  ## Usage
   ${usage}
 
   ## License
-  This project is covered by the $(license) license.
-
+  This project is covered by the ${license} license. 
+  ![${license} license badge](https://img.shields.io/badge/license-${license}-brightgreen)
+  
   ## Contribution
   ${contribution}
 
@@ -51,11 +50,11 @@ function generateMarkdown(data) {
   ${test}
 
   ## Questions
-  Visit my GitHub 
+  Visit my GitHub [${github}](https://github.com/${github})
 
-  If you have any additional questions not answered here or wish to contact me regarding developments, please email me at ${email}(mailto:${email}).
-   
-`;
+  If you have any additional questions not answered here or wish to contact me regarding developments, please email me at 
+  [${email}](mailto:${email})
+  `;
 }
 
 module.exports = generateMarkdown;
