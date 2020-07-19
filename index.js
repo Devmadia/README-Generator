@@ -1,12 +1,12 @@
-const fs = require('fs'); // in order to use File System, the below constant is necessary
+const fs = require('fs'); // in order to use File System, the aside constant is necessary
 const inquirer = require('inquirer');
-// // receiving module.exports from generateMarkdown.js
-// const generatePage = require('./src/generateMarkdown.js');
+
+// receiving module.exports from generateMarkdown.js
+const generatePage = require('./src/generateMarkdown.js');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 /* Questions: the title of project and sections entitled "Description", "Table of Contents", 
 "Installation", "Usage", "License", "Contributing", "Tests", and "Questions" */
-
-
 
 // array of questions for user
 const questions = [
@@ -118,7 +118,17 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-
+    inquirier
+        .prompt(questions)
+        .then((data) => {
+            return generateMarkdown(data);
+        })
+        .then((markdown) => {
+            writeToFile("README.md", markdown);
+        })
+        .catch((err) => {
+            console.log(err);
+        });
 }
 
 // function call to initialize program
