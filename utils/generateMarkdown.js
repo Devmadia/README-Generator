@@ -41,6 +41,7 @@ function generateMarkdown(data) {
 
   ## License
   This project is covered by the ${license} license. 
+  
   ![${license} license badge](https://img.shields.io/badge/license-${license}-brightgreen)
   
   ## Contribution
