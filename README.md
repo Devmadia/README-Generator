@@ -13,6 +13,8 @@
   * [Contribution](#contribution)
   * [Test](#test)
   * [Questions](#questions) 
+
+  ![README Generator Demo](https://devmadia.github.io/README-Generator/README-Generator.gif)
   
   ## Installation
   Initiate a clone or pull of a project's repo onto your local machine, then change directory into the README Generator. You will need to run [npm i] to install Inquirer.
@@ -22,6 +24,7 @@
 
   ## License
   This project is covered by the MIT license. 
+
   ![MIT license badge](https://img.shields.io/badge/license-MIT-brightgreen)
   
   ## Contribution
