@@ -117,7 +117,7 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-    inquirier
+    inquirer
         .prompt(questions)
         .then((data) => {
             return generateMarkdown(data);
