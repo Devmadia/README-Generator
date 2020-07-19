@@ -42,10 +42,15 @@ const questions = [
         default: true
     },
     {
+        type: "input",
+        name: "usage",
+        message: "What are your instructions for how to use your project?"
+    },
+    {
         /* a badge for that license is added near the top of the README and 
         a notice is added to the section of the README entitled License that 
         explains which license the application is covered under */
-        type: "input",
+        type: "checkbox",
         name: "license",
         message: "What kind of license should your project have?",
         choices: [
@@ -58,7 +63,7 @@ const questions = [
 			"Boost Software 1.0",
 			"The Unlicense"
         ],
-        // default: 0
+        default: 0
     },
     {
         type: "input",
