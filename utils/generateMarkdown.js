@@ -53,7 +53,7 @@ function generateMarkdown(data) {
   ## Questions
   Visit my GitHub 
 
-  If you have any additional questions not answered here or wish to contact me regarding developments, please email me at $(email)
+  If you have any additional questions not answered here or wish to contact me regarding developments, please email me at ${email}(mailto:${email}).
    
 `;
 }
